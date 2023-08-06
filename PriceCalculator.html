@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Price Calculation and Payment</title>
+  <link rel="stylesheet" type="text/css" href="PriceCalculator.css">
+</head>
+<body>
+    
+  <h1>Price Calculation and Payment</h1>
+
+  <div class="form-container">
+    <div>
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" min="1" required>
+    </div>
+    <div>
+      <label for="price">Price per item:</label>
+      <input type="number" id="price" min="0" step="100" required>
+    </div>
+    <div>
+      <label for="total">Total:</label>
+      <span id="total">0.00</span>
+    </div>
+    <div>
+      <button id="calculate-btn">Calculate</button>
+    </div>
+    <div>
+      <button id="pay-btn">Pay</button>
+    </div>
+  </div>
+
+  <script src="PriceCalculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <meta charset8" /> -->
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="./Homecss.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="./Product.css">
+  <link rel="stylesheet" href="./side.css">
+  <link rel="stylesheet" href="SecondProduct.css">
+  <link rel="stylesheet" href="product3.css">
+  <script src="Slide.js"></script>
+  <script src="AddCart.js"></script>
+  <script src="product.js"></script>
+  <script src="Second.js"></script>
+  <script src="product3.js"></script>
+  <style>
+
+    li{
+        font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div  class="site-heading center" style="margin-top: 0px; background-color: rgb(81, 152, 143);">
+       <div class="heading">
+           <img src="photo/VR logo.png" width="110px" height="110px" alt="Logo">
+           <span  font-size="10px" class="text">VR Trading</span>
+       </div>
+       <div class="nav-items">
+        <div class="search">
+            <input type="text" class="search-box" placeholder="search brand, product">
+            <button class="search-btn">search</button>
+        </div>
+        <a class="search-box-nav" href="#"><img src="photo/user.png" alt=""></a>
+        <a href="#cart"><img src="photo/cart.png" alt=""></a><p style="font-size: 10px;">Cart</p>
+    </div>
+        <span class="link">
+            <a  style="display: inline; color: bisque;font-size: 15px;" href="tel:7631052269"><i class="fa fa-fw fa-phone"></i>+91 7631052269</a>
+            <a style="color: bisque;font-size: 15px" href = "mailto: jiwankumar12yes@gmail.com"><i style="margin-right: 8px;" class="fa fa-fw fa-envelope"></i>jiwankumar12yes@gmail.com</a>
+        </span>
+    </div>
+  </header>
+  
+  <div class="menu-bar" id="menu-bar">
+    
+    <ul>
+        <li class="active"><a href="Home.html" target=""><i class="fa fa-fw fa-home"></i>Home</a></li>
+        <li><a href="#" target=""></i>About Us</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="#" target="" >Mission</a></li>
+                    <li><a href="#" target="" >Vision</a></li>
+                    <li><a href="#" target="" >Team</a></li>
+                    
+                </ul>
+            </div>
+        </li>
+        <li><a href="#" target=""><i class="fa fa-fw fa-industry"></i>Services</a>
+            <div class="sub-menu-1">
+                <ul>
+                    <li><a href="#" target="" >Home Delivery</a></li>
+                    <li><a href="#" target="" >Marketing</a></li>
+                    <li class="hover-me"><a href="#" target="" >Polythene</a>
+                        <div class="sub-menu-2">
+                            <ul>
+                                <li><a href="#" target="" >Plythene1</a></li>
+                                <li><a href="#" target="" >Plythene2</a></li>
+                                <li><a href="#" target="" >Plythene3</a></li>
+                                
+                            </ul>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </li>
+        <li><a href="#" target=""><i class="fa fa-fw fa-people-roof"></i>Clients</a></li>
+        <li><a href="PriceCalculator.html" target=""><i class="fa fa-fw fa-rupee-sign"></i></i>Pricing</a></li>
+        <li><a href="Order.html" target=""><i class="fa fa-fw fa-shopping-bag"></i>Order</a></li>
+        <li><a href="#" target=""><i class="fa fa-fw fa-envelope"></i>Contact</a></li>
+        <li><a href="Login.html" target=""><i style="display: inline;" class="fa fa-fw fa-user"></i>Login/SingUp</a></li>
+      </ul>
+    </div>
+  
+    <!-- <table class="profile-table">
+        <tr>
+            <td width="33%">
+                <div  class="profile-left">
+                    <img id="profile-pic-left" src="photo/animation2.png" alt="Profile">
+                    <h2 id="name-left">John Doe</h2>
+                </div>
+            </td>
+            <td width="33%"><div class="slider">
+                <span id="slide-1"></span>
+                <span id="slide-2"></span>
+                <span id="slide-3"></span>
+                <div class="image-container">
+                  <img src="photo/animation.webp" class="slide" width="500" height="300" />
+                  <img src="photo/animation2.png" class="slide" width="500" height="300" />
+                  <img src="photo/animation.webp" class="slide" width="500" height="300" />
+                </div>
+                <div class="buttons">
+                  <a href="#slide-1"></a>
+                  <a href="#slide-2"></a>
+                  <a href="#slide-3"></a>
+                </div>
+            </td>
+            <td width="33%">
+                <div  class="profile-right">
+                    <img id="profile-pic-right" src="photo/animation2.png" alt="Profile">
+                    <h2 id="name-right">John Doe</h2>
+                </div>
+            </td>
+        </tr>
+    </table>
+  </div> 
+  <hr style="width:100%; height:50px;text-align:left;margin-left:0">-->
+  
+<div  class="container">
+    <h3  class="title">Shop Now</h3>
+    <div class="products-container">
+        <div class="product" data-name="p-1">
+            <img src="photo/about-us.png" alt="">
+            <h3>strawberries</h3>
+            <div class="price"><i class="fa fa-fw fa-rupee-sign"></i>2.00</div>
+        </div>
+        <div class="product" data-name="p-2">
+            <img src="photo/VR logo.png" alt="">
+            <h3>jenas</h3>
+            <div class="price"><i class="fa fa-fw fa-rupee-sign"></i>2.00</div>
+        </div>
+        <div class="product" data-name="p-3">
+            <img src="photo/user.png" alt="">
+            <h3>shirt</h3>
+            <div class="price"><i class="fa fa-fw fa-rupee-sign"></i>2.00</div>
+        </div>
+        <div class="product" data-name="p-4">
+            <img src="photo/cart.png" alt="">
+            <h3>top</h3>
+            <div class="price"><i class="fa fa-fw fa-rupee-sign"></i>2.00</div>
+        </div>
+        <div class="product" data-name="p-5">
+            <img src="photo/animation2.png" alt="">
+            <h3>shoe</h3>
+            <div class="price"><i class="fa fa-fw fa-rupee-sign"></i>2.00</div>
+        </div>
+        <div class="product" data-name="p-6">
+            <img src="photo/animation.webp" alt="">
+            <h3>comb</h3>
+            <div class="price"><i class="fa fa-fw fa-rupee-sign"></i>2.00</div>
+        </div>
+
+    </div>
+</div>
+
+<div class="products-preview">
+    <div class="preview active " data-target="p-1">
+        <img src="photo/cart.png" alt="">
+        <h3>organic strawberry</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. consectetur, dolorem. </p>
+        <div class="price">$2.00</div>
+        <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+        </div>
+    </div>
+    <div class="preview" data-target="p-2">
+        <i class="fas fa-times"></i>
+        <img src="photo/VR logo.png" alt="">
+        <h3>jeans</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. consectetur, dolorem. </p>
+        <div class="price">$2.00</div>
+        <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+        </div>
+    </div>
+    <div class="preview" data-target="p-3">
+        <img src="photo/user.png" alt="">
+        <h3>shirt</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. consectetur, dolorem. </p>
+        <div class="price">$2.00</div>
+        <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+        </div>
+    </div>
+    <div class="preview" data-target="p-4">
+        <img src="photo/cart.png" alt="">
+        <h3>top</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. consectetur, dolorem. </p>
+        <div class="price">$2.00</div>
+        <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+        </div>
+    </div>
+    <div class="preview" data-target="p-5">
+        <img src="photo/animation2.png" alt="">
+        <h3>shoe</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. consectetur, dolorem. </p>
+        <div class="price">$2.00</div>
+        <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+        </div>
+    </div>
+    <div class="preview" data-target="p-6">
+        <img src="photo/animation.webp" alt="">
+        <h3>comb</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <span>( 250 )</span>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. consectetur, dolorem. </p>
+        <div class="price">$2.00</div>
+        <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="#" class="cart">add to cart</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 3 -->
+ <section class="container content-section">
+            <h2 class="section-header">item 1</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 1</span>
+                    <img class="shop-item-image" src="photo/about-us.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price"><i class="fa fa-fw fa-rupee-sign"></i>12.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 2</span>
+                    <img class="shop-item-image" src="photo/animation.webp">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price"><i class="fa fa-fw fa-rupee-sign"></i>14.99</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 3</span>
+                    <img class="shop-item-image" src="photo/animation2.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price"><i class="fa fa-fw fa-rupee-sign"></i>9.99</span>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>( 250 )</span>
+                        </div>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Album 4</span>
+                    <img class="shop-item-image" src="photo/cart.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price"><i class="fa fa-fw fa-rupee-sign"></i>19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header">item2</h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <span class="shop-item-title">T-Shirt</span>
+                    <img class="shop-item-image" src="photo/user.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price"><i class="fa fa-fw fa-rupee-sign"></i>19.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">Coffee Cup</span>
+                    <img class="shop-item-image" src="photo/VR logo.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price"><i class="fa fa-fw fa-rupee-sign"></i>6.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-items">
+                    <div class="shop-item">
+                        <span class="shop-item-title">T-Shirt</span>
+                        <img class="shop-item-image" src="photo/user.png">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price"><i class="fa fa-fw fa-rupee-sign"></i>19.99</span>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section class="container content-section">
+            <h2 class="section-header" id="cart">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price"><i class="fa fa-fw fa-rupee-sign"></i>0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+
+
+
+
+
+
+  
+<!-- 
+//sidenav
+<div class="sidenav">
+    <h4>Make custom</h4>
+    <form action="#" method="post">
+        <label for="fname">Full Name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="sname">Shop/factory Name:</label>
+        <input type="text" id="sname" name="sname"><br><br>
+        <label for="design">Design:</label>
+        <input type="file" id="design" name="design"><br><br>
+        <label for="description">Description</label>
+        <input type="textarea" id="description" name="description"><br><br>
+        <label for="address">Full address</label><br>
+        <textarea rows="4" cols="10"></textarea><br><br>
+        <input type="submit" value="Submit">
+      </form>
+  </div>
+ -->
+
+
+
+  <footer class="footer">
+    <div class="footer-heading" >
+       <div class="heading">
+        <img heiwidth="110px" height="110px" src="photo/VR logo.png">
+        <span class="text">VR Trading</span>
+        </div>
+    </div>
+    <div class="table-footer">
+        <table style="font-size: 15px;">
+            <tr>
+                <td width="40%">
+                    <p>Careers</p>
+                </td>
+                <td width="40%">
+                    <p>Consumer Care</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <p>policy</p>
+                </td>
+                <td >
+                    <p>Copy Right</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <p>Contact Us</p>
+                </td>
+                <td >
+                    <p>Help</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <p>Return policy</p>
+                </td>
+                <td >
+                    <p>Refund Status</p>
+                </td>
+            </tr>
+            <tr>
+                <td width="25%">
+                    <p>Feedback</p>
+                </td>
+                <td >
+                    <p>Call Back Request</p>
+                </td>
+                
+            </tr>
+            
+        </table>
+        
+        <div >
+            <iframe width="600" height="350" class="map-factry" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3424.4743436753542!2d75.86581397533233!3d30.87338887451669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzDCsDUyJzI0LjIiTiA3NcKwNTInMDYuMiJF!5e0!3m2!1sen!2sin!4v1688134718485!5m2!1sen!2sin"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+        </div>
+         
+            <div id="subscribe-footer">
+                    <div class="footer-text-container">
+                            <!-- <i class="icon-envelope-alt"></i> -->
+                        <h3>Subscribe to our newsletter!</h3>
+                        <p>Love to read our articles? Sign up now to get fresh content about blogger, SEO, make money, templates directly to your inbox.</p>
+                            <!-- <i class='icon-chevron-right'></i> -->
+                    <div>
+                    <form class="form-container">
+                        <input class="inptfld" name="email" placeholder=" Your Email" type="text">
+                        <input name="" value="" type="hidden">
+                       <input name="" value="" type="hidden">
+                        <input class="subscribebtn" value="Subscribe Now!" type="submit">
+                    </form>
+            </div>
+            <div>
+                <ul class="menu marketing-site-footer-menu-social simple">
+                    <li ><a href="https://www.youtube.com/@RahulFitness-ju4kw"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+                     <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                     <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <td><tr><div class="developer"><a href="Resume.html">Developer: Jiwan kumar</a> </div></tr></td>
+  </footer> 
+  
+  
+  
+</body>
+</html>
