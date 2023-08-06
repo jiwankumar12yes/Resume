@@ -1,0 +1,174 @@
+==================================================================================================================
+							Servlet
+====================================================================================================================
+Servlet technology is used to create a web application (resides at server side and generates a dynamic web page).
+
+Servlet technology is robust and scalable because of java language. Before Servlet, CGI (Common Gateway Interface) scripting language was common as a server-side programming language.
+
+There are many interfaces and classes in the Servlet API such as Servlet, GenericServlet, HttpServlet, ServletRequest, ServletResponse, etc.
+
+What is a Servlet?
+Servlet can be described in many ways, depending on the context.
+*	Servlet is a technology which is used to create a web application.
+*	Servlet is an API that provides many interfaces and classes including documentation.
+*	Servlet is an interface that must be implemented for creating any Servlet.
+*	Servlet is a class that extends the capabilities of the servers and responds to the incoming requests. 
+	It can respond to any requests.
+*	Servlet is a web component that is deployed on the server to create a dynamic web page.
+
+
+What is a web application?
+-----------------------------------------------
+A web application is an application accessible from the web. A web application is composed of web components like Servlet, JSP, Filter, etc. and other elements such as HTML, CSS, and JavaScript. The web components typically execute in Web Server and respond to the HTTP request.
+
+CGI (Common Gateway Interface)
+-----------------------------------
+CGI technology enables the web server to call an external program and pass HTTP request information to the external program to process the request. For each request, it starts a new process.
+
+
+Disadvantages of CGI
+----------------------------------------
+There are many problems in CGI technology:
+1. If the number of clients increases, it takes more time for sending the response.
+2. For each request, it starts a process, and the web server is limited to start processes.
+3. It uses platform dependent language e.g. C, C++, perl etc.
+
+Advantages of Servlet
+----------------------------------------
+There are many advantages of Servlet over CGI. The web container creates threads for handling the multiple requests to the Servlet. Threads have many benefits over the Processes such as they share a common memory area, lightweight, cost of communication between the threads are low. 
+
+The advantages of Servlet are as follows:
+=============================================
+1.	Better performance: because it creates a thread for each request, not process.
+2.	Portability: because it uses Java language.
+3.	Robust: JVM manages Servlets, so we don't need to worry about the memory leak, garbage 	collection, etc.
+4.	Secure: because it uses java language.
+
+==============================================================================================
+					Servlet API
+==============================================================================================
+The javax.servlet and javax.servlet.http packages represent interfaces and classes for servlet api.
+
+The javax.servlet package contains many interfaces and classes that are used by the servlet or web container. 
+These are not specific to any protocol.
+
+
+The javax.servlet.http package contains interfaces and classes that are responsible for http requests only. 
+
+Let's see what are the interfaces of javax.servlet package.
+--------------------------------------------------------------
+Interfaces in javax.servlet package
+-------------------------------------------------------------------------
+There are many interfaces in javax.servlet package. They are as follows:
+1. Servlet
+2. ServletRequest
+3. ServletResponse
+4. RequestDispatcher
+5. ServletConfig
+6. ServletContext
+7. SingleThreadModel
+8. Filter
+9. FilterConfig
+10. FilterChain
+11. ServletRequestListener
+12. ServletRequestAttributeListener
+13. ServletContextListener
+14. ServletContextAttributeListener
+
+Classes in javax.servlet package
+-----------------------------------------------------------------------
+There are many classes in javax.servlet package. They are as follows:
+1. GenericServlet
+2. ServletInputStream
+3. ServletOutputStream
+4. ServletRequestWrapper
+5. ServletResponseWrapper
+6. ServletRequestEvent
+7. ServletContextEvent
+8. ServletRequestAttributeEvent
+9. ServletContextAttributeEvent
+10.ServletException
+11.UnavailableException
+
+
+Interfaces in javax.servlet.http package
+-----------------------------------------------------------------------------
+There are many interfaces in javax.servlet.http package. They are as follows:
+1.HttpServletRequest
+2.HttpServletResponse
+3.HttpSession
+4.HttpSessionListener
+5.HttpSessionAttributeListener
+6.HttpSessionBindingListener
+7.HttpSessionActivationListener
+8.HttpSessionContext (deprecated now)
+
+Classes in javax.servlet.http package
+---------------------------------------------------------------------------
+There are many classes in javax.servlet.http package. They are as follows:
+1.HttpServlet
+2.Cookie
+3.HttpServletRequestWrapper
+4.HttpServletResponseWrapper
+5.HttpSessionEvent
+6.HttpSessionBindingEvent
+7.HttpUtils (deprecated now)
+
+=============================================================================================
+		Servlet Interface
+=============================================================================================
+Servlet interface provides common behavior to all the servlets. Servlet interface defines methods that all servlets must implement.
+
+Servlet interface needs to be implemented for creating any servlet (either directly or indirectly). It provides 3 life cycle methods that are used to initialize the servlet, to service the requests, and to destroy the servlet and 2 non-life cycle methods.
+
+----------------------------------------------------------------------------------------------
+Methods of Servlet interface
+----------------------------------------------------------------------------------------------
+There are 5 methods in Servlet interface. The init, service and destroy are the life cycle methods of servlet. These are invoked by the web container.
+
+Method							Description
+========================================		================================================
+1. public void init(ServletConfig config)		initializes the servlet. It is the life cycle method of servlet and invoked by 							the web container only once.
+
+2. public void 
+service(ServletRequest request,
+ServletResponse response)				provides response for the incoming request. It is invoked at each request by the web container.
+
+3. public void destroy()				is invoked only once and indicates that servlet is being destroyed.
+
+4. public ServletConfig getServletConfig()		returns the object of ServletConfig.
+
+5. public String getServletInfo()			returns information about servlet such as writer,copyright, version etc.
+
+=====================================================================================================================================
+Servlet Example by implementing Servlet interface
+--------------------------------------------------
+Let's see the simple example of servlet by implementing the servlet interface.
+--------------------------------------------------------------------------------------
+Spring core : window application/api
+Spring MVC  :Web application
+Spring boot : window application/api and web application
+Spring boo.io: Microservices 
+Spring and Hibernate
+============================================================================================
+
+1.create web application project
+----------------------------------
+2.create servlet
+---------------------------------
+3.Execute the servlet
+------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
